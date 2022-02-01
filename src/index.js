@@ -121,6 +121,9 @@ var handlers = {
     'AMAZON.CancelIntent': function() {
         this.emit('StopCommand');
     },
+    'AMAZON.FallbackIntent': function(){
+        this.emit('StopCommand')
+    },
     'StopCommand': function() {
         this.emit(':tellWithCard', this.t("STOP_MESSAGE"), this.t("STOP_CARD"), this.t("STOP_MESSAGE"));
     },

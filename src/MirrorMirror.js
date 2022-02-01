@@ -2,10 +2,10 @@ var awsIot = require('aws-iot-device-sdk');
 
 var app = {}
 
-app.TOPIC_IMAGES = "MagicMirror:new-images"
-app.TOPIC_TEXT = "MagicMirror:new-text"
-app.TOPIC_MODULE = "MagicMirror:change-module"
-app.TOPIC_VIDEO = "MagicMirror:new-video"
+app.TOPIC_IMAGES = "MagicMirror-new-images"
+app.TOPIC_TEXT = "MagicMirror-new-text"
+app.TOPIC_MODULE = "MagicMirror-change-module"
+app.TOPIC_VIDEO = "MagicMirror-new-video"
 
 app.setup = function() {
   app.device = awsIot.device({
